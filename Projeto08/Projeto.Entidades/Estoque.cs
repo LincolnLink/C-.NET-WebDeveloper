@@ -12,7 +12,7 @@ namespace Projeto.Entidades
         private int idEstoque;
         private string nome;
         private string descricao;
-        private List<Produto> produtos; //lista
+        private List<Produto> produtos;
         #endregion
 
         #region Contrutores
