@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Projeto.DAL;
 using System.Data.SqlClient;
+using Projeto.Entidades;
 
 
 namespace Projeto.DAL
