@@ -133,6 +133,10 @@
       <Project>{32771c38-4650-4afb-83ea-8d9c4d9368ab}</Project>
       <Name>Projeto.DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Projeto.Entidades\Projeto.Entidades.csproj">
+      <Project>{a10ab183-1134-47f9-9429-8b5befdf53cc}</Project>
+      <Name>Projeto.Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
