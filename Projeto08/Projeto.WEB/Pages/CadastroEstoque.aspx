@@ -13,8 +13,8 @@
     <h3>Cadastro de Estoques</h3>
     <a href="/Default.aspx">Voltar</a> para a página inicial.
     <hr />
-    <form id="form1" runat="server">
-        <div class="col-md-4">
+    <form id="form1" runat="server" class="row">
+        <div class="col-md-6">
             <label>Nome do Estoque: </label>
             <asp:TextBox ID="txtNome" runat="server" CssClass="form-control" />
             <asp:Label ID="lblErroNome" runat="server" CssClass="text-danger" />
@@ -25,7 +25,11 @@
             <asp:Label ID="lblErroDescricao" runat="server" CssClass="text-danger" />
             <br />
 
-            <asp:Button ID="btnCadastro" runat="server" Text="Cadastrar Estoque" CssClass="btn btn-success" OnClick="btnCadastro_Click"/>
+            <asp:Button ID="btnCadastro"  
+                runat="server" 
+                Text="Cadastrar Estoque" 
+                CssClass="btn btn-success" 
+                OnClick="BtnCadastro_Click"/>
             <br />
             <br />
             <asp:Label ID="lblMensagem" runat="server" />

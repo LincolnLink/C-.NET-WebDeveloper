@@ -15,7 +15,8 @@ namespace Projeto.DAL
         public void Insert(Estoque e)
         {
             OpenConnection();
-            string query = "insert into Estoque(Nome, Descricao)values(@Nome, @Descricao)";
+            string query = "insert into Estoque(Nome, Descricao)"
+                        + "values(@Nome, @Descricao)";
             cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@Nome", e.Nome);
             cmd.Parameters.AddWithValue("@Descricao", e.Descricao);

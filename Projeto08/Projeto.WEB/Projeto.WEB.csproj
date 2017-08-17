@@ -129,6 +129,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Projeto.BLL\Projeto.BLL.csproj">
+      <Project>{85ce51c4-6549-4ac5-9870-75460b154912}</Project>
+      <Name>Projeto.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Projeto.DAL\Projeto.DAL.csproj">
       <Project>{32771c38-4650-4afb-83ea-8d9c4d9368ab}</Project>
       <Name>Projeto.DAL</Name>

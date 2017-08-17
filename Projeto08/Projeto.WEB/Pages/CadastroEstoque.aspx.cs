@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Projeto.Entidades;
+using Projeto.BLL;
 
 namespace Projeto.WEB.Pages
 {
@@ -17,13 +19,29 @@ namespace Projeto.WEB.Pages
 
         }
 
-        protected void btnCadastro_Click(object sender, EventArgs e)
+        protected void BtnCadastro_Click(object sender, EventArgs e)
         {
             if(ValidateFiels())
-            {
-                //imprimir mensagem
-                lblMensagem.Text = "Estoquecadastrado com sucesso";
+            { 
+                try
+                {
+                    Estoque est = new Estoque(); 
+                    est.Nome = txtNome.Text;
+                    est.Descricao = txtDescricao.Text;
 
+                    EstoqueBusiness rep = new EstoqueBusiness();
+                    rep.Cadastrar(est);
+
+                    lblMensagem.Text = "Estoquecadastrado com sucesso";
+
+                    txtDescricao.Text = string.Empty;
+                    txtNome.Text = string.Empty;
+
+                }
+                catch (Exception ex)
+                {
+                    lblMensagem.Text = ex.Message;
+                } 
             }           
         }
         //metodo para validar formulario
