@@ -14,7 +14,7 @@ namespace Projeto.WEB.Pages
         protected void Page_Load(object sender, EventArgs e)
         {
             //verifica se a pagina esta sendo aberta pela 1° vez
-            if ( ! IsPostBack)
+            if (!IsPostBack)
             {
                 try
                 {

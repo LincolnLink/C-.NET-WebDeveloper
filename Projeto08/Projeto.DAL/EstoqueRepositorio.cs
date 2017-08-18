@@ -37,7 +37,7 @@ namespace Projeto.DAL
         public void Delete(int idEstoque)
         {
             OpenConnection();
-            string query = "delete * from Estoque where idEstoque = @idEstoque";
+            string query = "delete from Estoque where idEstoque = @idEstoque";
             cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@idEstoque", idEstoque);
             CloseConnection();

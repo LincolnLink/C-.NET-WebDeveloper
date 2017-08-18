@@ -30,8 +30,7 @@
         <asp:Label ID="lblDescricao" runat="server" />
         <br />
         <br />
-        <asp:Button ID="btnExclusao" runat="server" 
-            Text="Confirmar Exclusão" CssClass="btn btn-danger" OnClick="btnExclusao_Click"/>
+        <asp:Button ID="btnExclusao" runat="server" Text="Confirmar Exclusão" CssClass="btn btn-danger" OnClick="btnExclusao_Click"/>
         <br />
         <br />
         <asp:Label ID="lblMensagem" runat="server" />        
