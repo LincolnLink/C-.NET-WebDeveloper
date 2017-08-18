@@ -11,54 +11,55 @@ namespace Projeto.WEB.Pages
 {
     public partial class ExclusaoEstoque : System.Web.UI.Page
     {
+        //Evento executado sempre que a página é carregada..
         protected void Page_Load(object sender, EventArgs e)
         {
-            //verifica se a pagina esta sendo aberta pela 1° vez
-            if (!IsPostBack)
+            //verificar se a página esta sendo carregada pela 1º vez..
+            if (!IsPostBack) //se a página não foi aberta?
             {
                 try
                 {
-                    //resgata o id enviado pela URL(QueryString)
+                    //resgatar o id enviado pela URL (QueryString)
                     int idEstoque = int.Parse(Request.QueryString["id"]);
 
-                    //Acessar a camada de negócio...
-                    EstoqueBusiness bussiness = new EstoqueBusiness();
-                    Estoque estoque = bussiness.BuscasPorId(idEstoque);
+                    //acessar a camada de negócio..
+                    EstoqueBusiness business = new EstoqueBusiness();
+                    Estoque estoque = business.BuscasPorId(idEstoque);
 
-                    //Alimenta a tela
+                    //imprimir os dados na página..
                     lblCodigo.Text = estoque.IdEstoque.ToString();
                     lblNome.Text = estoque.Nome;
                     lblDescricao.Text = estoque.Descricao;
-                    
                 }
                 catch (Exception ex)
                 {
+                    //exibir mensagem de erro..
                     lblMensagem.Text = ex.Message;
                 }
             }
         }
 
+        //evento de exclusão..
         protected void btnExclusao_Click(object sender, EventArgs e)
         {
-
             try
             {
-                //resgatar o id do estoque
+                //resgatar o id do estoque..
                 int idEstoque = int.Parse(lblCodigo.Text);
-                //excluir estoque
-                EstoqueBusiness bussiness = new EstoqueBusiness();
-                bussiness.Excluir(idEstoque);
 
-                lblMensagem.Text = "Estoque excluido com sucesso";
-                //desativar botão
+                //excluir o estoque..
+                EstoqueBusiness business = new EstoqueBusiness();
+                business.Excluir(idEstoque);
+
+                lblMensagem.Text = "Estoque excluido com sucesso.";
+
+                //desativar o botão..
                 btnExclusao.Enabled = false;
             }
             catch (Exception ex)
             {
                 lblMensagem.Text = ex.Message;
             }
-
         }
-        
     }
 }

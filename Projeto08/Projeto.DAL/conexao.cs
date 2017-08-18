@@ -19,7 +19,7 @@ namespace Projeto.DAL
 
         protected void OpenConnection()
         {
-            con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\COTI informatica\GitHub\Aula08\Projeto08\Projeto.WEB\App_Data\Database1.mdf;Integrated Security=True");
+            con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\COTI informatica\GitHub\Aula08\Projeto08\Projeto.WEB\App_Data\banco1.mdf;Integrated Security=True");
             con.Open(); //conectando
         }
         protected void CloseConnection()

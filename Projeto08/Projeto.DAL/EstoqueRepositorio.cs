@@ -40,9 +40,10 @@ namespace Projeto.DAL
             string query = "delete from Estoque where idEstoque = @idEstoque";
             cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@idEstoque", idEstoque);
+            cmd.ExecuteNonQuery();
             CloseConnection();
         }
-        public List<Estoque> FildAll()
+        public List<Estoque> FindAll()
         {
             OpenConnection();
             string query = "select * from Estoque";
@@ -63,7 +64,7 @@ namespace Projeto.DAL
             CloseConnection();
             return lista;
         }
-        public Estoque FildById(int idEstoque)
+        public Estoque FindById(int idEstoque)
         {
             OpenConnection();
             string query = "select * from Estoque where idEstoque = @idEstoque";

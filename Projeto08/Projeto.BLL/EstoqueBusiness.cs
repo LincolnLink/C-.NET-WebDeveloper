@@ -21,7 +21,7 @@ namespace Projeto.BLL
         {
             EstoqueRepositorio rep = new EstoqueRepositorio();
 
-            if (rep.FildById(e.IdEstoque) != null)
+            if (rep.FindById(e.IdEstoque) != null)
             {
                 rep.Update(e);
             }
@@ -35,7 +35,7 @@ namespace Projeto.BLL
         {
             EstoqueRepositorio rep = new EstoqueRepositorio();
 
-            if (rep.FildById(idEstoque) != null)
+            if (rep.FindById(idEstoque) != null)
             {
                 rep.Delete(idEstoque);
             }
@@ -49,13 +49,13 @@ namespace Projeto.BLL
         {
 
             EstoqueRepositorio rep = new EstoqueRepositorio();
-            return rep.FildAll();
+            return rep.FindAll();
         }
 
         public Estoque BuscasPorId(int idEstoque)
         {
             EstoqueRepositorio rep = new EstoqueRepositorio();
-            Estoque e = rep.FildById(idEstoque);
+            Estoque e = rep.FindById(idEstoque);
 
             if (e != null)
             {
