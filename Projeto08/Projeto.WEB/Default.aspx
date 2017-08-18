@@ -11,18 +11,28 @@
 </head>
 <body class="container">   
     <form id="form1" runat="server">
-        <div>
+         <div class="jumbotron">
+                <h3> Sistema de Cadastro</h3>
+            </div>
             <p>Selecione a operação desejada: </p>
-            <ul>
-                <li><a href="/Pages/CadastroEstoque.aspx">Cadastrar Estoques</a></li>
-                <li><a href="/Pages/ConsultaEstoque.aspx">Consultar Estoques</a></li>
-            </ul>
-            <ul>
-                <li><a href="/Pages/CadastroProduto.aspx">Cadastrar Produtos</a></li>
-                <li><a href="/Pages/ConsultaProduto.aspx">Consulta Produtos</a></li>
-            </ul>
+        <div class="col-md-6">           
+            <ul class="list-group list-unstyled">
+                <li>
+                    <a class="list-group-item" href="/Pages/CadastroEstoque.aspx">Cadastrar Estoques</a>
+                </li>
+                <li>
+                    <a class="list-group-item" href="/Pages/ConsultarEstoque.aspx">Consultar Estoques</a>
 
-
+                </li>
+            </ul>
+            <ul class="list-group list-unstyled">
+                <li>
+                    <a class="list-group-item" href="/Pages/CadastroProduto.aspx">Cadastrar Produtos</a>
+                </li>
+                <li >
+                    <a class="list-group-item" href="/Pages/ConsultaProduto.aspx">Consulta Produtos</a>
+                </li>
+            </ul>
         </div>
     </form>
 </body>

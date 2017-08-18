@@ -70,6 +70,9 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="Pages\ConsultarEstoque.aspx" />
+    <Content Include="Pages\EdicaoEstoque.aspx" />
+    <Content Include="Pages\ExclusaoEstoque.aspx" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <None Include="Web.Debug.config">
@@ -122,6 +125,27 @@
     </Compile>
     <Compile Include="Pages\CadastroEstoque.aspx.designer.cs">
       <DependentUpon>CadastroEstoque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ConsultarEstoque.aspx.cs">
+      <DependentUpon>ConsultarEstoque.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ConsultarEstoque.aspx.designer.cs">
+      <DependentUpon>ConsultarEstoque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EdicaoEstoque.aspx.cs">
+      <DependentUpon>EdicaoEstoque.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\EdicaoEstoque.aspx.designer.cs">
+      <DependentUpon>EdicaoEstoque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ExclusaoEstoque.aspx.cs">
+      <DependentUpon>ExclusaoEstoque.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ExclusaoEstoque.aspx.designer.cs">
+      <DependentUpon>ExclusaoEstoque.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
