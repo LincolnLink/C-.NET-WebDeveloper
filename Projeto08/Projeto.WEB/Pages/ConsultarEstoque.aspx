@@ -16,7 +16,7 @@
     <hr />
    
     <form id="form1" runat="server">
-        <div class="col-md-6">
+        <div class="col-xs-12 col-md-6">
             <asp:label ID="lblMensagem" runat="server" />
             <br />
             <br />

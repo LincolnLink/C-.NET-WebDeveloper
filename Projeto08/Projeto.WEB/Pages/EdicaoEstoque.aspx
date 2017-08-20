@@ -19,18 +19,17 @@
             <asp:TextBox ID="txtCodigo" runat="server"
                 ReadOnly="true" CssClass="form-control"/>
             <br />
-            <br />
             <label><strong>Nome do Produto:</strong> </label>
             <asp:TextBox ID="txtNome" runat="server" CssClass=" form-control" />
             <asp:Label ID="lblErroNome" runat="server" CssClass="text-danger"></asp:Label>
-            <br />
             <br />
             <label><strong>Descrição</strong></label>
             <asp:TextBox ID="txtDescricao" runat="server" CssClass="form-control" TextMode="MultiLine" />
             <asp:Label ID="lblErroDescricao" runat="server" CssClass="text-danger" />
             <br />
-            <br />
-            <asp:button ID="btnEdicao" runat="server" Text="Atualizar Estoque" CssClass="btn btn-primary" />
+            <asp:button ID="btnEdicao" runat="server" 
+                Text="Atualizar Estoque" CssClass="btn btn-primary"
+                Onclick="btnEdicao_Click"/>
             <br />
             <br />
             <asp:label ID="lblMensagem" runat="server" />
