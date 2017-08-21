@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="EstoqueBusiness.cs" />
     <Compile Include="Excecoes\Estoques\EstoqueNaoEncontradoException.cs" />
+    <Compile Include="Excecoes\Produtos\ProdutoNaoEncontradoException.cs" />
+    <Compile Include="ProdutoBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
