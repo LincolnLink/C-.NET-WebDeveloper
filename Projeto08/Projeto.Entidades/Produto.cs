@@ -48,7 +48,7 @@ namespace Projeto.Entidades
         public int Quantidade
         {
             set { quantidade = value; }
-            get { return Quantidade; }
+            get { return quantidade; }
         }
         public DateTime DataCadastro
         {

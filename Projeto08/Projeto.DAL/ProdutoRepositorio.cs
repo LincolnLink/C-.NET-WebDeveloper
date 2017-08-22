@@ -17,14 +17,13 @@ namespace Projeto.DAL
             OpenConnection();
 
             string query = "insert into Produto( Nome, Preco, Quantidade, DataCadastro, IdEstoque)" +
-                "values( @nome, @preco, @quantidade, @dataCadastro, @idEstoque)";
+                "values( @nome, @preco, @quantidade, GetDate(), @idEstoque)";
 
             cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@idProduto", p.IdProduto);
             cmd.Parameters.AddWithValue("@nome", p.Nome);
             cmd.Parameters.AddWithValue("@preco", p.Preco);
-            cmd.Parameters.AddWithValue("@quantidade", p.Quantidade);
-            cmd.Parameters.AddWithValue("@dataCadastro", p.DataCadastro);
+            cmd.Parameters.AddWithValue("@quantidade", p.Quantidade);            
             cmd.Parameters.AddWithValue("@idEstoque", p.Estoque.IdEstoque);
             cmd.ExecuteNonQuery();
             CloseConnection();

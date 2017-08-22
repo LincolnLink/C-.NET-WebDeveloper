@@ -70,6 +70,7 @@
       <DependentUpon>banco1.mdf</DependentUpon>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="Pages\CadastroProduto.aspx" />
     <Content Include="Pages\ConsultarEstoque.aspx" />
     <Content Include="Pages\EdicaoEstoque.aspx" />
     <Content Include="Pages\ExclusaoEstoque.aspx" />
@@ -125,6 +126,13 @@
     </Compile>
     <Compile Include="Pages\CadastroEstoque.aspx.designer.cs">
       <DependentUpon>CadastroEstoque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CadastroProduto.aspx.cs">
+      <DependentUpon>CadastroProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CadastroProduto.aspx.designer.cs">
+      <DependentUpon>CadastroProduto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\ConsultarEstoque.aspx.cs">
       <DependentUpon>ConsultarEstoque.aspx</DependentUpon>

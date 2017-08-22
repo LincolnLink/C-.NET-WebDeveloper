@@ -11,7 +11,6 @@ namespace Projeto.DAL
 {
     public class EstoqueRepositorio : Conexao
     {
-
         public void Insert(Estoque e)
         {
             OpenConnection();
