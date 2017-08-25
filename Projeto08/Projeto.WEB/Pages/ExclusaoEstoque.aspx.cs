@@ -40,7 +40,7 @@ namespace Projeto.WEB.Pages
         }
 
         //evento de exclusão..
-        protected void btnExclusao_Click(object sender, EventArgs e)
+        protected void BtnExclusao_Click(object sender, EventArgs e)
         {
             try
             {
@@ -54,7 +54,7 @@ namespace Projeto.WEB.Pages
                 lblMensagem.Text = "Estoque excluido com sucesso.";
 
                 //desativar o botão..
-                btnExclusao.Enabled = false;
+                BtnExclusao.Enabled = false;
             }
             catch (Exception ex)
             {

@@ -21,16 +21,13 @@
         <div class="control-label"><strong>Codigo do Estoque: </strong></div>
         <asp:Label ID="lblCodigo" runat="server" />
         <br />
-        <br />
         <div class="control-label"><strong>Nome do Estoque: </strong></div>
         <asp:Label ID="lblNome" runat="server" />
-        <br />
         <br />
         <div class="control-label"><strong>Descrição: </strong></div>
         <asp:Label ID="lblDescricao" runat="server" />
         <br />
-        <br />
-        <asp:Button ID="btnExclusao" runat="server" Text="Confirmar Exclusão" CssClass="btn btn-danger" OnClick="btnExclusao_Click"/>
+        <asp:Button ID="BtnExclusao" runat="server" Text="Confirmar Exclusão" CssClass="btn btn-danger" OnClick="BtnExclusao_Click"/>
         <br />
         <br />
         <asp:Label ID="lblMensagem" runat="server" />        

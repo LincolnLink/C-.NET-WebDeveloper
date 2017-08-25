@@ -23,6 +23,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -72,8 +73,10 @@
     <Content Include="packages.config" />
     <Content Include="Pages\CadastroProduto.aspx" />
     <Content Include="Pages\ConsultarEstoque.aspx" />
+    <Content Include="Pages\ConsultarProduto.aspx" />
     <Content Include="Pages\EdicaoEstoque.aspx" />
     <Content Include="Pages\ExclusaoEstoque.aspx" />
+    <Content Include="Pages\ExclusaoProduto.aspx" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <None Include="Web.Debug.config">
@@ -141,6 +144,13 @@
     <Compile Include="Pages\ConsultarEstoque.aspx.designer.cs">
       <DependentUpon>ConsultarEstoque.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ConsultarProduto.aspx.cs">
+      <DependentUpon>ConsultarProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ConsultarProduto.aspx.designer.cs">
+      <DependentUpon>ConsultarProduto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\EdicaoEstoque.aspx.cs">
       <DependentUpon>EdicaoEstoque.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -154,6 +164,13 @@
     </Compile>
     <Compile Include="Pages\ExclusaoEstoque.aspx.designer.cs">
       <DependentUpon>ExclusaoEstoque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ExclusaoProduto.aspx.cs">
+      <DependentUpon>ExclusaoProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ExclusaoProduto.aspx.designer.cs">
+      <DependentUpon>ExclusaoProduto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -10,7 +10,7 @@
 namespace Projeto.WEB.Pages {
     
     
-    public partial class ExclusaoEstoque {
+    public partial class ExclusaoProduto {
         
         /// <summary>
         /// Controle form1.
@@ -22,13 +22,22 @@ namespace Projeto.WEB.Pages {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Controle lblCodigo.
+        /// Controle lblMensagem.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCodigo;
+        protected global::System.Web.UI.WebControls.Label lblMensagem;
+        
+        /// <summary>
+        /// Controle lblIdProduto.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblIdProduto;
         
         /// <summary>
         /// Controle lblNome.
@@ -40,30 +49,48 @@ namespace Projeto.WEB.Pages {
         protected global::System.Web.UI.WebControls.Label lblNome;
         
         /// <summary>
-        /// Controle lblDescricao.
+        /// Controle lblPreco.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescricao;
+        protected global::System.Web.UI.WebControls.Label lblPreco;
         
         /// <summary>
-        /// Controle BtnExclusao.
+        /// Controle lblQuantidade.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnExclusao;
+        protected global::System.Web.UI.WebControls.Label lblQuantidade;
         
         /// <summary>
-        /// Controle lblMensagem.
+        /// Controle lblDataCadastro.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMensagem;
+        protected global::System.Web.UI.WebControls.Label lblDataCadastro;
+        
+        /// <summary>
+        /// Controle lblEstoque.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEstoque;
+        
+        /// <summary>
+        /// Controle BtnExcluir.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnExcluir;
     }
 }

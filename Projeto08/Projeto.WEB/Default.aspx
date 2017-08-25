@@ -30,7 +30,7 @@
                     <a class="list-group-item" href="/Pages/CadastroProduto.aspx">Cadastrar Produtos</a>
                 </li>
                 <li >
-                    <a class="list-group-item" href="/Pages/ConsultaProduto.aspx">Consulta Produtos</a>
+                    <a class="list-group-item" href="/Pages/ConsultarProduto.aspx">Consulta Produtos</a>
                 </li>
             </ul>
         </div>

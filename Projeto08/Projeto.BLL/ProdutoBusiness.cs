@@ -40,13 +40,13 @@ namespace Projeto.BLL
 
         #region Excluir
 
-        public void excluir(int idProduto)
+        public void Excluir(int idProduto)
         {
             ProdutoRepositorio rep = new ProdutoRepositorio();
 
             if (rep.FindById(idProduto) != null)
             {
-                rep.delete(idProduto);
+                rep.Delete(idProduto);
             }
             else
             {
@@ -68,6 +68,7 @@ namespace Projeto.BLL
         public Produto EncontrarProduto(int idProduto)
         {
             ProdutoRepositorio rep = new ProdutoRepositorio();
+           
             Produto e = rep.FindById(idProduto);
 
             if (e != null)

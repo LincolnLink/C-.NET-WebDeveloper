@@ -52,10 +52,10 @@ namespace Projeto.DAL
 
         #region Deletar
 
-        public void delete(int idProduto)
+        public void Delete(int idProduto)
         {
             OpenConnection();
-            string query = "delete * from Produto where idProduto = @idProduto";
+            string query = "delete from Produto where idProduto = @idProduto";
 
             cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@idProduto", idProduto);
@@ -77,6 +77,7 @@ namespace Projeto.DAL
             while (dr.Read())
             {
                 Produto p = new Produto();
+                p.Estoque = new Estoque();
 
                 p.IdProduto = Convert.ToInt32(dr["IdProduto"]);
                 p.Nome = Convert.ToString(dr["Nome"]);
@@ -96,7 +97,7 @@ namespace Projeto.DAL
         {
 
             OpenConnection();
-            string query = "select * from Produto where IdProduto = @idProduto";
+            string query = "select * from Produto where idProduto = @idProduto";
             cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@idProduto", idProduto);
             dr = cmd.ExecuteReader();
@@ -104,6 +105,9 @@ namespace Projeto.DAL
 
             if (dr.Read())
             {
+                p = new Produto();
+                p.Estoque = new Estoque();
+
                 p.IdProduto = Convert.ToInt32(dr["IdProduto"]);
                 p.Nome = Convert.ToString(dr["Nome"]);
                 p.Preco = Convert.ToDecimal(dr["Preco"]);
