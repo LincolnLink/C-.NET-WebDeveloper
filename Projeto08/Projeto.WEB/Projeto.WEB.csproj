@@ -75,6 +75,7 @@
     <Content Include="Pages\ConsultarEstoque.aspx" />
     <Content Include="Pages\ConsultarProduto.aspx" />
     <Content Include="Pages\EdicaoEstoque.aspx" />
+    <Content Include="Pages\EdicaoProduto.aspx" />
     <Content Include="Pages\ExclusaoEstoque.aspx" />
     <Content Include="Pages\ExclusaoProduto.aspx" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
@@ -157,6 +158,13 @@
     </Compile>
     <Compile Include="Pages\EdicaoEstoque.aspx.designer.cs">
       <DependentUpon>EdicaoEstoque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EdicaoProduto.aspx.cs">
+      <DependentUpon>EdicaoProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\EdicaoProduto.aspx.designer.cs">
+      <DependentUpon>EdicaoProduto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\ExclusaoEstoque.aspx.cs">
       <DependentUpon>ExclusaoEstoque.aspx</DependentUpon>

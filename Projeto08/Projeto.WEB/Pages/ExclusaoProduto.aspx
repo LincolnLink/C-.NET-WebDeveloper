@@ -11,7 +11,7 @@
 </head>
 <body class="container">
     <h3>Excluir Produto</h3>
-    <a href="/Default.aspx">Voltar</a> para a página inicial.
+    <a href="/Pages/ConsultarProduto.aspx">Voltar</a> para a página inicial.
     <hr />   
     <form id="form1" runat="server">
         <div class="row">
@@ -46,6 +46,7 @@
                 <br />
                 <br />
                 <asp:Button runat="server" ID="BtnExcluir" Text="Exluir Produto" CssClass="btn btn-danger btn-md" OnClick="BtnExcluir_Click"/>
+                 <a href="/Pages/ConsultarProduto.aspx" class="btn btn-link">Calcelar</a>
             </div>
         </div>
     </form>

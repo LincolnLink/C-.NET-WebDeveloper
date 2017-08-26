@@ -53,7 +53,7 @@
                         </asp:TemplateField>
                         <asp:TemplateField>
                             <ItemTemplate>
-                                <a href='/Pages/EditarProduto.aspx?id=<%# Eval("IdProduto") %>' class="btn btn-primary btn-block btn-sm">Editar</a>
+                                <a href='/Pages/EdicaoProduto.aspx?id=<%# Eval("IdProduto") %>' class="btn btn-primary btn-block btn-sm">Editar</a>
                             </ItemTemplate>
                         </asp:TemplateField>
                         <asp:TemplateField>

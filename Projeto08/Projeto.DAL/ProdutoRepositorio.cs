@@ -37,13 +37,12 @@ namespace Projeto.DAL
         {
             OpenConnection();
             string query = "update Produto set Nome = @nome, Preco = @preco, Quantidade = @quantidade,"
-                + " DataCadastro = @dataCadastro, IdEstoque = @idEstoque"+
-                "where idProduto = @idProduto";
+                + " IdEstoque = @idEstoque where idProduto = @idProduto";
             cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@IdProduto", p.IdProduto);
             cmd.Parameters.AddWithValue("@nome", p.Nome);
             cmd.Parameters.AddWithValue("@preco", p.Preco);
             cmd.Parameters.AddWithValue("@quantidade", p.Quantidade);
-            cmd.Parameters.AddWithValue("@dataCadastro", p.DataCadastro);
             cmd.Parameters.AddWithValue("@idEstoque", p.Estoque.IdEstoque);
             cmd.ExecuteNonQuery();
             CloseConnection();
