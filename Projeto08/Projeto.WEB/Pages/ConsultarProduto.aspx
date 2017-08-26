@@ -36,6 +36,7 @@
                                 <%# Eval("Preco")%>
                             </ItemTemplate>
                         </asp:TemplateField>
+
                         <asp:TemplateField HeaderText="Quantidade">
                             <ItemTemplate>
                                 <%# Eval("Quantidade")%>

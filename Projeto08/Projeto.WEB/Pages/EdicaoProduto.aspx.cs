@@ -86,6 +86,9 @@ namespace Projeto.WEB.Pages
                     lblErroPreco.Text = string.Empty;
                     lblErroQuantidade.Text = string.Empty;
 
+                    //desativar o botão
+                    BtnEditar.Enabled = false;
+
                     //mensagem que foi editado com sucesso! e alterar css
                     lblMessagem.Text = "Produto: " + p.Nome + " alterado com sucesso!";
                     lblMessagem.CssClass = " success alert-success";

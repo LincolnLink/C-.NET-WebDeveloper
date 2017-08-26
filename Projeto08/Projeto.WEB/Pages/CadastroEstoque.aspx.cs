@@ -36,6 +36,7 @@ namespace Projeto.WEB.Pages
 
                     txtDescricao.Text = string.Empty;
                     txtNome.Text = string.Empty;
+                    
 
                 }
                 catch (Exception ex)

@@ -45,8 +45,7 @@
 
                 <br />
                 <br />
-                <asp:Button runat="server" ID="BtnExcluir" Text="Exluir Produto" CssClass="btn btn-danger btn-md" OnClick="BtnExcluir_Click"/>
-                 <a href="/Pages/ConsultarProduto.aspx" class="btn btn-link">Calcelar</a>
+                <asp:Button runat="server" ID="BtnExcluir" Text="Exluir Produto" CssClass="btn btn-danger btn-md" OnClick="BtnExcluir_Click"/>               
             </div>
         </div>
     </form>

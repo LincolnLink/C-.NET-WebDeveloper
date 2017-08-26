@@ -56,6 +56,9 @@ namespace Projeto.WEB.Pages
                 EstoqueBusiness rep = new EstoqueBusiness();
                 rep.Atualizar(estoque);
 
+                //desativar o botão
+                btnEdicao.Enabled = false;
+
                 //informar que já foi editado
                 lblMensagem.Text = "Estoque editado com sucesso!";             
 

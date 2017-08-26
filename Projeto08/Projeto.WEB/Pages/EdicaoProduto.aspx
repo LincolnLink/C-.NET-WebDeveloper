@@ -40,8 +40,7 @@
                 <asp:Label runat="server" ID="lblErroEstoque" CssClass="label label-danger" />
                 <br />
                 <br />
-                <asp:Button runat="server" ID="BtnEditar" CssClass="btn btn-success"  Text="Editar Produto" OnClick="BtnEditar_Click" />
-                <a href="/Pages/ConsultarProduto.aspx" class="btn btn-link">Calcelar</a>
+                <asp:Button runat="server" ID="BtnEditar" CssClass="btn btn-success"  Text="Editar Produto" OnClick="BtnEditar_Click" />                
                 <br />
                 <asp:Label runat="server" ID="lblMessagem" CssClass="danger alert-danger" />
             </div>
