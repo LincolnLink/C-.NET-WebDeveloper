@@ -33,12 +33,10 @@
             <label>Escolha um estoque</label>
             <asp:DropDownList runat="server" ID="ddlEstoque" CssClass="form-control" />
             <asp:Label runat="server" ID="lblErroEstoque" CssClass="label label-danger" />
-
             <br />
             <br />
             <asp:Button runat="server" ID="BtnCadastrar" Text="Cadastrar"
                 CssClass="btn btn-primary btn-sm" OnClick="BtnCadastrar_Click" />
-
             <asp:Label runat="server" ID="lblMessagem" CssClass="" />
         </div>
     </form>

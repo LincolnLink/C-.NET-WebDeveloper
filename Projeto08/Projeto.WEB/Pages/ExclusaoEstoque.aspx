@@ -11,23 +11,26 @@
 </head>
 <body class="container">
     <h3>Excluir Estoque</h3>
-    <a href="/Default.aspx">Voltar</a> para a página inicial
+    <a href="/Pages/ConsultarEstoque.aspx">Voltar</a> para a página inicial
     <hr />
     <form id="form1" runat="server">
     <div class="col-md-6">
         <div class="alert alert-danger" >Deseja excluir o estoque selecionado?</div>
-    <br />
-    <br />
-        <div class="control-label"><strong>Codigo do Estoque: </strong></div>
+    
+        <strong>Codigo do Estoque: </strong>
         <asp:Label ID="lblCodigo" runat="server" />
         <br />
-        <div class="control-label"><strong>Nome do Estoque: </strong></div>
+    <br />
+       <strong>Nome do Estoque: </strong>
         <asp:Label ID="lblNome" runat="server" />
         <br />
-        <div class="control-label"><strong>Descrição: </strong></div>
+    <br />
+        <strong>Descrição: </strong>
         <asp:Label ID="lblDescricao" runat="server" />
         <br />
-        <asp:Button ID="BtnExclusao" runat="server" Text="Confirmar Exclusão" CssClass="btn btn-danger" OnClick="BtnExclusao_Click"/>
+        <br />
+   
+        <asp:Button ID="BtnExclusao" runat="server" Text="Confirmar Exclusão" CssClass="btn btn-danger" OnClick="BtnExclusao_Click"/>      
         <br />
         <br />
         <asp:Label ID="lblMensagem" runat="server" />        

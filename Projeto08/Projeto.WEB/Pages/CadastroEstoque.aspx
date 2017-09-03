@@ -24,7 +24,6 @@
             <asp:TextBox ID="txtDescricao" runat="server" CssClass="form-control" TextMode="MultiLine" />
             <asp:Label ID="lblErroDescricao" runat="server" CssClass="text-danger" />
             <br />
-
             <asp:Button ID="btnCadastro"  
                 runat="server" 
                 Text="Cadastrar Estoque" 

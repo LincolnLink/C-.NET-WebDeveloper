@@ -11,7 +11,7 @@
 </head>
 <body class="container">
     <h3>Editar Estoque</h3>
-    <a href="/Default.aspx">Voltar</a> para a página inicial
+    <a href="/Pages/ConsultarEstoque.aspx">Voltar</a> para a página inicial
     <hr />
     <form id="form1" runat="server">
         <div class="col-md-6">            
@@ -29,7 +29,7 @@
             <br />
             <asp:button ID="btnEdicao" runat="server" 
                 Text="Atualizar Estoque" CssClass="btn btn-primary"
-                Onclick="btnEdicao_Click"/>
+                Onclick="btnEdicao_Click"/>            
             <br />
             <br />
             <asp:label ID="lblMensagem" runat="server" />

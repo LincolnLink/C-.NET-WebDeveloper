@@ -42,6 +42,7 @@
                             <%# Eval("Descricao") %>
                         </ItemTemplate>
                     </asp:TemplateField>
+
                     <asp:TemplateField HeaderText="Operações">
                         <ItemTemplate>
                             <a href='/Pages/EdicaoEstoque.aspx?id=<%# Eval("IdEstoque") %>' class="btn btn-primary btn-sm btn-block">
