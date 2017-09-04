@@ -14,10 +14,10 @@ namespace Projeto.DAL
         public void Insert(Estoque e)
         {
             OpenConnection();
-            string query = "insert into Estoque(Nome, Descricao)"
-                        + "values(@Nome, @Descricao)";
+            string query = "insert into Estoque(NomeEstoque, Descricao)"
+                        + "values(@NomeEstoque, @Descricao)";
             cmd = new SqlCommand(query, con);
-            cmd.Parameters.AddWithValue("@Nome", e.Nome);
+            cmd.Parameters.AddWithValue("@NomeEstoque", e.Nome);
             cmd.Parameters.AddWithValue("@Descricao", e.Descricao);
             cmd.ExecuteNonQuery();
             CloseConnection();
@@ -25,10 +25,10 @@ namespace Projeto.DAL
         public void Update(Estoque e)
         {
             OpenConnection();
-            string query = "update Estoque set Nome = @Nome, Descricao = @Descricao where IdEstoque = @IdEstoque";
+            string query = "update Estoque set NomeEstoque = @NomeEstoque, Descricao = @Descricao where IdEstoque = @IdEstoque";
             cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@IdEstoque", e.IdEstoque);
-            cmd.Parameters.AddWithValue("@Nome", e.Nome);
+            cmd.Parameters.AddWithValue("@NomeEstoque", e.Nome);
             cmd.Parameters.AddWithValue("@Descricao", e.Descricao);
             cmd.ExecuteNonQuery();
             CloseConnection();
@@ -56,7 +56,7 @@ namespace Projeto.DAL
             {
                 Estoque e = new Estoque();
                 e.IdEstoque = Convert.ToInt32(dr["idEstoque"]);
-                e.Nome = Convert.ToString(dr["Nome"]);
+                e.Nome = Convert.ToString(dr["NomeEstoque"]);
                 e.Descricao = Convert.ToString(dr["Descricao"]);
                 lista.Add(e);
             }
@@ -77,7 +77,7 @@ namespace Projeto.DAL
             {
                 e = new Estoque();
                 e.IdEstoque = Convert.ToInt32(dr["idEstoque"]);
-                e.Nome = Convert.ToString(dr["Nome"]);
+                e.Nome = Convert.ToString(dr["NomeEstoque"]);
                 e.Descricao = Convert.ToString(dr["Descricao"]);
             }
 

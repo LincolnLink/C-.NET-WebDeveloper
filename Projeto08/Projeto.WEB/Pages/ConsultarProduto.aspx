@@ -15,9 +15,19 @@
     <hr />
     <form id="form1" runat="server">
         <div class="row">
+            <div class="col-md-3">
+                <label>Selecione o estoque desejado:</label>
+                <asp:DropDownList ID="ddlEstoque" runat="server"
+                    CssClass="form-control"                 
+                    OnSelectedIndexChanged="ddlEstoque_SelectedIndexChanged"
+                     AutoPostBack="true"/>
+            </div>
+        </div>
+        <br />
+        <div class="row">
             <div class="col-md-12">
                 <asp:Label ID="lblmensagem" runat="server" />
-                <asp:GridView ID="gridProduto" runat="server"
+                <asp:GridView ID="gridProdutos" runat="server"
                     CssClass="table table-hover" GridLines="None" AutoGenerateColumns="false">
                     <Columns>
                         
@@ -33,7 +43,7 @@
                         </asp:TemplateField>
                         <asp:TemplateField HeaderText="Preço">
                             <ItemTemplate>
-                                <%# Eval("Preco")%>
+                                <%# Eval("Preco", "{0:c}")%>
                             </ItemTemplate>
                         </asp:TemplateField>
 
@@ -44,12 +54,17 @@
                         </asp:TemplateField>
                         <asp:TemplateField HeaderText="Data Cadastro">
                             <ItemTemplate>
-                                <%# Eval("DataCadastro")%>
+                                <%# Eval("DataCadastro", "{0:dd/MM/yyyy}")%>
                             </ItemTemplate>
                         </asp:TemplateField>
-                        <asp:TemplateField HeaderText="ID do Estoque">
+                        <asp:TemplateField HeaderText="Nome do Estoque">
                             <ItemTemplate>
-                                <%# Eval("Estoque.idEstoque")%>
+                                <%# Eval("Estoque.Nome")%>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Descrição Estoque">
+                            <ItemTemplate>
+                                <%# Eval("Estoque.Descricao")%>
                             </ItemTemplate>
                         </asp:TemplateField>
                         <asp:TemplateField>

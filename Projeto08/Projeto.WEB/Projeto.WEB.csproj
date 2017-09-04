@@ -66,9 +66,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\banco1.mdf" />
-    <Content Include="App_Data\banco1_log.ldf">
-      <DependentUpon>banco1.mdf</DependentUpon>
+    <Content Include="App_Data\Bank.mdf" />
+    <Content Include="App_Data\Bank_log.ldf">
+      <DependentUpon>Bank.mdf</DependentUpon>
     </Content>
     <Content Include="packages.config" />
     <Content Include="Pages\CadastroProduto.aspx" />

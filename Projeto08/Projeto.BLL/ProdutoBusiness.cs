@@ -63,8 +63,16 @@ namespace Projeto.BLL
         }
         #endregion
 
-        #region ProcurarProduto
+        #region CampoDeBusca
+        public List<Produto> ConsultarTodos(int idEstoque)
+        {
+            ProdutoRepositorio rep = new ProdutoRepositorio();
+            return rep.FindAll(idEstoque);
+        }
+        #endregion
 
+
+        #region ProcurarProduto
         public Produto EncontrarProduto(int idProduto)
         {
             ProdutoRepositorio rep = new ProdutoRepositorio();
