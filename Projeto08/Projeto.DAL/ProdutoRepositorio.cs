@@ -97,29 +97,24 @@ namespace Projeto.DAL
         }
         #endregion
 
-
+        
         #region SelecionarTotodosPeloIdEstoque
-
         public List<Produto> FindAll(int idEstoque)
         {
             OpenConnection();
-
-            string query = "select p.IdProduto, p.Nome, p.Preco, p.Quantidade," +
-                " p.DataCadastro, e.IdEstoque, e.NomeEstoque as NomeEstoque," +
+            string query = "select p.IdProduto, p.Nome, p.Preco, p.Quantidade, " +
+                " p.DataCadastro, e.IdEstoque, e.NomeEstoque as NomeEstoque, " +
                 " e.Descricao from Produto p inner join Estoque e " +
-                "on e.IdEstoque = p.IdEstoque" +
-                "where p.IdEstoque = @IdEstoque";
+                "on e.IdEstoque = p.IdEstoque " +
+                "where p.IdEstoque = @IdEstoque ";
             cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@IdEstoque", idEstoque);
             dr = cmd.ExecuteReader();
-
             List<Produto> lista = new List<Produto>();
-
             while (dr.Read())
             {
                 Produto p = new Produto();
                 p.Estoque = new Estoque();
-
                 p.IdProduto = Convert.ToInt32(dr["IdProduto"]);
                 p.Nome = Convert.ToString(dr["Nome"]);
                 p.Preco = Convert.ToDecimal(dr["Preco"]);
@@ -134,7 +129,7 @@ namespace Projeto.DAL
             return lista;
         }
         #endregion
-
+    
 
         #region buscarPorUmProduto
         public Produto FindById(int idProduto)

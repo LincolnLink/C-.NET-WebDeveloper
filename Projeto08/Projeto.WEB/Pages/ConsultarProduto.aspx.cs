@@ -70,7 +70,7 @@ namespace Projeto.WEB.Pages
             try
             {
                 //verificar se o campo dropdownlist não esta vazio..
-                if (!string.IsNullOrEmpty(ddlEstoque.SelectedValue))
+                if ( ! string.IsNullOrEmpty(ddlEstoque.SelectedValue))
                 {
                     //resgatar o id do estoque selecionado..
                     int idEstoque = int.Parse(ddlEstoque.SelectedValue);

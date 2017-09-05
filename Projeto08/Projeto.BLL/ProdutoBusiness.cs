@@ -68,7 +68,8 @@ namespace Projeto.BLL
         {
             ProdutoRepositorio rep = new ProdutoRepositorio();
             return rep.FindAll(idEstoque);
-        }
+        }
+
         #endregion
 
 

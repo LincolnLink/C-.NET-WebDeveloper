@@ -85,5 +85,20 @@ namespace Projeto.DAL
             return e;
 
         }
+        
+        public bool HastProduto(int idEstoque)
+        {
+            OpenConnection();
+            string query = " select count(IdEstoque) from Produto where IdEstoque = @IdEstoque ";
+
+            cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@IdEstoque", idEstoque);
+            int resposta = Convert.ToInt32(cmd.ExecuteScalar());
+            CloseConnection();
+            if (resposta != 0)
+                return true;
+            else
+                return false;
+        }
     }
 }
