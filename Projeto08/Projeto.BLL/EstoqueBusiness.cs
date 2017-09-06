@@ -36,8 +36,15 @@ namespace Projeto.BLL
             EstoqueRepositorio rep = new EstoqueRepositorio();
 
             if (rep.FindById(idEstoque) != null)
-            {
-                rep.Delete(idEstoque);
+            {             
+                if (!rep.HastProduto(idEstoque))
+                {
+                    rep.Delete(idEstoque);
+                }
+                else
+                {
+                    throw new EstoqueTemUmProdutoException();
+                }
             }
             else
             {
